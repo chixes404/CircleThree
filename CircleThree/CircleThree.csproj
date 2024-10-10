@@ -1,0 +1,179 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="wwwroot\media\0icpayz2\318505086_453266356972335_120248.png" />
+    <Content Include="wwwroot\media\0j1cuxdk\line.png" />
+    <Content Include="wwwroot\media\114dafgy\3c.jpg" />
+    <Content Include="wwwroot\media\1hkfkptt\12.jpg" />
+    <Content Include="wwwroot\media\2szk5mrr\white6.png" />
+    <Content Include="wwwroot\media\2t2dv4mq\white2.png" />
+    <Content Include="wwwroot\media\35opr12w\34.jpg" />
+    <Content Include="wwwroot\media\3ftj54zr\asset-2.png" />
+    <Content Include="wwwroot\media\3gtflxw2\2a.jpg" />
+    <Content Include="wwwroot\media\44lbuq0w\2c.jpg" />
+    <Content Include="wwwroot\media\5bibtfpj\workspace.png" />
+    <Content Include="wwwroot\media\5ici3aei\dd04a7d29e7d21fe96ec814dc2e5d096.png" />
+    <Content Include="wwwroot\media\5twe3fpz\3a.jpg" />
+    <Content Include="wwwroot\media\aapdlw52\441875958_748419180812347_338782.png" />
+    <Content Include="wwwroot\media\afflitdi\279357260_3348538858708753_52237.png" />
+    <Content Include="wwwroot\media\aqud1w41\44.jpg" />
+    <Content Include="wwwroot\media\arun4q2o\437523484_409892705006334_465508.png" />
+    <Content Include="wwwroot\media\at3nztjz\3.jpg" />
+    <Content Include="wwwroot\media\axvhwnpe\image.png" />
+    <Content Include="wwwroot\media\b01mq5ht\favicon.ico" />
+    <Content Include="wwwroot\media\b2thcaay\img_4970.jpg" />
+    <Content Include="wwwroot\media\b4fkuupd\whatsapp-image-2021-09-06-at-13141-pm.jpeg" />
+    <Content Include="wwwroot\media\bcyjmmf3\circle-3-logo.jpg" />
+    <Content Include="wwwroot\media\bf5mhzci\2b.jpg" />
+    <Content Include="wwwroot\media\bg4plpxw\11.jpg" />
+    <Content Include="wwwroot\media\bwbe5wqe\white4.png" />
+    <Content Include="wwwroot\media\c2xkobhe\2c.jpg" />
+    <Content Include="wwwroot\media\c3wefcdq\3ef35a4ec3168f8.png" />
+    <Content Include="wwwroot\media\cc5da4ee\31.jpg" />
+    <Content Include="wwwroot\media\cncmgxnq\34.jpg" />
+    <Content Include="wwwroot\media\cngltxgr\vivo-logo.png" />
+    <Content Include="wwwroot\media\d1phuijo\33.jpg" />
+    <Content Include="wwwroot\media\eegbeuo2\42.jpg" />
+    <Content Include="wwwroot\media\ep2jxzrv\img_2838.jpg" />
+    <Content Include="wwwroot\media\eprggbvk\1a.jpg" />
+    <Content Include="wwwroot\media\ev1ffbr5\335005048_726142685817947_646734.png" />
+    <Content Include="wwwroot\media\f0djnhx1\c3-working-space-logo-5.png" />
+    <Content Include="wwwroot\media\fcqnn1db\c3-working-space-logo-13.png" />
+    <Content Include="wwwroot\media\fi1ljcux\45.jpg" />
+    <Content Include="wwwroot\media\ftsfjt3d\2b.jpg" />
+    <Content Include="wwwroot\media\fwibg3df\4a.jpg" />
+    <Content Include="wwwroot\media\gaflgptk\vivo-logo.png" />
+    <Content Include="wwwroot\media\gmgl4nl0\318505086_453266356972335_120248.png" />
+    <Content Include="wwwroot\media\gnyfrlfc\374693520_6819736568091123_44079.png" />
+    <Content Include="wwwroot\media\heif3chg\logo.png" />
+    <Content Include="wwwroot\media\hluntgdo\4c.jpg" />
+    <Content Include="wwwroot\media\hm5mpc2h\3b.jpg" />
+    <Content Include="wwwroot\media\hpoll43p\45.jpg" />
+    <Content Include="wwwroot\media\hz1eyacj\parallax-3.jpg" />
+    <Content Include="wwwroot\media\ic4lwaer\circle-3-logo.png" />
+    <Content Include="wwwroot\media\im1nqg2v\31.jpg" />
+    <Content Include="wwwroot\media\isjahiff\white1.png" />
+    <Content Include="wwwroot\media\j53hwylo\13.jpg" />
+    <Content Include="wwwroot\media\jqennrl1\parallax-2.jpg" />
+    <Content Include="wwwroot\media\jsdhcjks\4a.jpg" />
+    <Content Include="wwwroot\media\jwhbf31q\19_2021-637748628299584653-958.jpg" />
+    <Content Include="wwwroot\media\jwqpihg5\12.jpg" />
+    <Content Include="wwwroot\media\katm001e\dd04a7d29e7d21fe96ec814dc2e5d096.png" />
+    <Content Include="wwwroot\media\kc4hh40m\46.jpg" />
+    <Content Include="wwwroot\media\kcyfv444\scrolldown.gif" />
+    <Content Include="wwwroot\media\kpgosxd5\aiesec-new-logo1.png" />
+    <Content Include="wwwroot\media\kt5lxhbu\home-7.jpg" />
+    <Content Include="wwwroot\media\ktxdyrtk\43.jpg" />
+    <Content Include="wwwroot\media\kzipod44\1c.jpg" />
+    <Content Include="wwwroot\media\l0gbtukc\46.jpg" />
+    <Content Include="wwwroot\media\la4lqocf\3b.jpg" />
+    <Content Include="wwwroot\media\ls3gysdx\33.jpg" />
+    <Content Include="wwwroot\media\mczlffdm\blue-modern-ramadan-sale-instagram-post.png" />
+    <Content Include="wwwroot\media\mrqoqcxp\parallax-1.jpg" />
+    <Content Include="wwwroot\media\mt1lzt1m\up-arrow.png" />
+    <Content Include="wwwroot\media\mujn1okg\2.jpg" />
+    <Content Include="wwwroot\media\mvknwbya\asset-5-3x.png" />
+    <Content Include="wwwroot\media\naxf0hd1\white3.png" />
+    <Content Include="wwwroot\media\nkshvksd\1c.jpg" />
+    <Content Include="wwwroot\media\nkwf3aeq\279357260_3348538858708753_52237.png" />
+    <Content Include="wwwroot\media\nsskxmhb\44.jpg" />
+    <Content Include="wwwroot\media\o4adnu4m\3c.jpg" />
+    <Content Include="wwwroot\media\oihdnan3\home-6.jpg" />
+    <Content Include="wwwroot\media\oo2n1jij\13.jpg" />
+    <Content Include="wwwroot\media\osldk4fi\4c.jpg" />
+    <Content Include="wwwroot\media\ow2hqohn\aiesec-new-logo1.png" />
+    <Content Include="wwwroot\media\ow5fs5qf\43.jpg" />
+    <Content Include="wwwroot\media\ozqlvl3i\1a.jpg" />
+    <Content Include="wwwroot\media\p0tba4rc\team3.png" />
+    <Content Include="wwwroot\media\p41poz5p\1.jpg" />
+    <Content Include="wwwroot\media\puuayy05\home-3.jpg" />
+    <Content Include="wwwroot\media\qd5nsp24\1b.jpg" />
+    <Content Include="wwwroot\media\qfdf3b3s\1b.jpg" />
+    <Content Include="wwwroot\media\rjmnrktn\245463895_941910946708790_705518.png" />
+    <Content Include="wwwroot\media\rzhbqqfr\tipper-icon.png" />
+    <Content Include="wwwroot\media\sgwdxy5d\41.jpg" />
+    <Content Include="wwwroot\media\sjxnxd0x\white5.png" />
+    <Content Include="wwwroot\media\srpmf4zu\img_4431.jpg" />
+    <Content Include="wwwroot\media\ssbf51ia\video.jpg" />
+    <Content Include="wwwroot\media\sujcw50c\circle-3-logo-cut.png" />
+    <Content Include="wwwroot\media\sv5jnfyn\home-1.jpg" />
+    <Content Include="wwwroot\media\t15hzctm\4.jpg" />
+    <Content Include="wwwroot\media\t1np3zt5\video.jpg" />
+    <Content Include="wwwroot\media\tbslx4yd\asset-2.png" />
+    <Content Include="wwwroot\media\tglnap3m\4b.jpg" />
+    <Content Include="wwwroot\media\tmclxejo\374693520_6819736568091123_44079.png" />
+    <Content Include="wwwroot\media\tpxgvob0\img_50231.jpg" />
+    <Content Include="wwwroot\media\tzslehn4\42.jpg" />
+    <Content Include="wwwroot\media\uachumrd\img_5013.jpg" />
+    <Content Include="wwwroot\media\ubjj5ek3\home-5.jpg" />
+    <Content Include="wwwroot\media\ufibqn5t\4b.jpg" />
+    <Content Include="wwwroot\media\ufzhyah4\41.jpg" />
+    <Content Include="wwwroot\media\un4chbkx\img_8695.jpeg" />
+    <Content Include="wwwroot\media\uorklkui\team2.png" />
+    <Content Include="wwwroot\media\uspjofdq\32.jpg" />
+    <Content Include="wwwroot\media\uvselqid\3ef35a4ec3168f8.png" />
+    <Content Include="wwwroot\media\vcuhxkcj\32.jpg" />
+    <Content Include="wwwroot\media\vdklgqzj\finaaal2022.png" />
+    <Content Include="wwwroot\media\vexh0xqv\307083175_100264189517058_249091.png" />
+    <Content Include="wwwroot\media\vytltzeo\20230224_134243.jpg" />
+    <Content Include="wwwroot\media\w3lnw0lq\245463895_941910946708790_705518.png" />
+    <Content Include="wwwroot\media\w5edh0bq\437523484_409892705006334_465508.png" />
+    <Content Include="wwwroot\media\wkmo1xnx\335005048_726142685817947_646734.png" />
+    <Content Include="wwwroot\media\wybomzu0\team1.png" />
+    <Content Include="wwwroot\media\x24p5rcr\11.jpg" />
+    <Content Include="wwwroot\media\x5pb2rbu\image.png" />
+    <Content Include="wwwroot\media\xhzmqftt\home-2.jpg" />
+    <Content Include="wwwroot\media\xipfjsfg\home-4.jpg" />
+    <Content Include="wwwroot\media\xyoljc0n\img_50231.jpg" />
+    <Content Include="wwwroot\media\y2blckfz\qu.png" />
+    <Content Include="wwwroot\media\y2zaquyl\2a.jpg" />
+    <Content Include="wwwroot\media\y30jcjy3\close.png" />
+    <Content Include="wwwroot\media\yk5a3hcl\image.png" />
+    <Content Include="wwwroot\media\yp3bxtpr\441875958_748419180812347_338782.png" />
+    <Content Include="wwwroot\media\z13dity3\3a.jpg" />
+    <Content Include="wwwroot\media\z4clyuha\307083175_100264189517058_249091.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Reflections.Umbraco13.StarterKit" Version="1.0.2" />
+    <PackageReference Include="Umbraco.Cms" Version="13.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Opt-in to app-local ICU to ensure consistent globalization APIs across different platforms -->
+    <PackageReference Include="Microsoft.ICU.ICU4C.Runtime" Version="72.1.0.3" />
+    <RuntimeHostConfigurationOption Include="System.Globalization.AppLocalIcu" Value="72.1.0.3" Condition="$(RuntimeIdentifier.StartsWith('linux')) or $(RuntimeIdentifier.StartsWith('win')) or ('$(RuntimeIdentifier)' == '' and !$([MSBuild]::IsOSPlatform('osx')))" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Components\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\media\4vwaxbr0\img_5021.heic" />
+    <None Include="wwwroot\media\fpufjems\img_4996.heic" />
+    <None Include="wwwroot\media\g41niqfu\sitemap.xsl" />
+    <None Include="wwwroot\media\hjramlga\img_5021.heic" />
+    <None Include="wwwroot\media\mujpwtlh\img_5021.heic" />
+    <None Include="wwwroot\media\qspjn1gu\img_5013.heic" />
+    <None Include="wwwroot\media\vrqkiywo\cd-icon-controller.svg" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <!-- Razor files are needed for the backoffice to work correctly -->
+    <CopyRazorGenerateFilesToPublishDirectory>true</CopyRazorGenerateFilesToPublishDirectory>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!-- Remove RazorCompileOnBuild and RazorCompileOnPublish when not using ModelsMode InMemoryAuto -->
+    <RazorCompileOnBuild>false</RazorCompileOnBuild>
+    <RazorCompileOnPublish>false</RazorCompileOnPublish>
+  </PropertyGroup>
+
+</Project>
