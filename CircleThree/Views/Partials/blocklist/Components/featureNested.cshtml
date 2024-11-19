@@ -1,0 +1,17 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockListItem>;
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@using Umbraco.Cms.Core.Models
+
+@{
+         var content = (ContentModels.FeatureNested)Model.Content;
+    
+
+    
+  			<div class="four columns" data-scroll-reveal="enter bottom move 100px over 1s after 0.3s">
+						<div class="services-wrap back-gray">							
+							<h5><span><i class="fa @content.Value("featureIcon")" aria-hidden="true"></i></span> @content.Value("featureTitle")</h5>
+							<p>@content.Value("featureDesc")</p>
+						</div>
+					</div>	
+
+}

@@ -1,0 +1,52 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockListItem>;
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@using Umbraco.Cms.Core.Models
+
+@{
+          var content = (ContentModels.OurTeamList)Model.Content;
+          
+            var TeamImg = content.Value<MediaWithCrops>("memberImg");
+            var MemberFbUrl = content.Value<Link>("memberFbLink");
+            var MemberXUrl = content.Value<Link>("memberXLink");
+            var MemberLnUrl = content.Value<Link>("memberLnLink");
+
+	                   
+}
+
+
+			<div class="four columns" data-scroll-reveal="enter bottom move 100px over 1s after 0.3s">
+				<div class="team-wrap fst">
+					<h6>@content.Value("memberName")</h6>
+					<p>@content.Value("memberDesc")</p>
+					<div class="social-team">
+						<ul class="list-social-team">
+							<li class="icon-team tipped" data-title="twitter" data-tipper-options='{"direction":"top","follow":"true"}'>
+							
+							     @if (MemberFbUrl != null)
+	                        {
+	                            <a href="@MemberXUrl.Url">&#xf099;</a>
+	                        }
+                          
+							</li>
+							<li class="icon-team tipped" data-title="github" data-tipper-options='{"direction":"top","follow":"true"}'>
+								
+								    @if (MemberLnUrl != null)
+	                        {
+	                            <a href="@MemberLnUrl.Url">&#xf09b;</a>
+	                        }
+							</li>
+						
+							<li class="icon-team tipped" data-title="facebook" data-tipper-options='{"direction":"top","follow":"true"}'>
+							    @if (MemberFbUrl != null)
+	                        {
+	                            <a href="@MemberFbUrl.Url">&#xf09a</a>
+	                        }
+							</li>
+						</ul>
+					</div>
+					  @if (TeamImg != null)
+                            {
+		                                <img src="@TeamImg.MediaUrl()" alt="@TeamImg.Value("alt")">
+                            }
+				</div>
+			</div>

@@ -1,0 +1,21 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockListItem>;
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@using Umbraco.Cms.Core.Models
+
+@{
+         var content = (ContentModels.TestimonialNested)Model.Content;
+    
+
+    
+  			<div class="item">	
+																				
+						<div class="container">	
+							<div class="twelve columns">	
+								<div class="quote">	
+									<h4>"@content.Value("testimonialNestedText")"</h4>
+								</div>	
+							</div>	
+						</div>											
+					</div>	
+
+}

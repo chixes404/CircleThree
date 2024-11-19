@@ -1,0 +1,21 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockListItem>;
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@using Umbraco.Cms.Core.Models
+
+@{
+         var content = (ContentModels.AboutNested)Model.Content;
+    
+
+    
+  							<div class="six columns" >
+						<div class="about-wrap">
+							<div class="about-icon">
+							<i class="fa-solid @content.Value("aboutNestedIcon")"></i>
+							</div>
+							<h5 data-scroll-reveal="enter bottom move 100px over 1s after 0.3s">@content.Value("aboutNestedTitle")</h5>
+							<p data-scroll-reveal="enter bottom move 100px over 1s after 0.3s">@content.Value("aboutNestedDesc")</p>
+						</div>
+					</div>
+
+
+}

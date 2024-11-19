@@ -1,0 +1,94 @@
+﻿
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockListModel>
+ 
+ @using Umbraco.Cms.Core.Models
+
+ @for (var i = 0; i < Model.Count; i++)
+    {
+        var block = Model[i];
+      
+
+        if (block?.ContentUdi != null)
+        {
+         var data = block.Content;
+         var whatWeDoImage1R = data.Value<MediaWithCrops>("whatWeDoImage1");
+         var whatWeDoImage2R = data.Value<MediaWithCrops>("whatWeDoImage2");
+         var whatWeDoImage3R = data.Value<MediaWithCrops>("whatWeDoImage3");
+
+         
+         
+        
+            @if(i % 2 == 0)
+            {
+                    
+                    
+                    
+                  
+
+
+    
+                    
+                    
+            <div class="clear"></div>
+			<div class="five columns">
+						<div class="work-wrap">
+							<img src="@whatWeDoImage1R.MediaUrl()" alt="Some image"  data-scroll-reveal="enter bottom move 150px over 1s after 0.1s" />
+							<img src="@whatWeDoImage2R.MediaUrl()" alt="Some image"  data-scroll-reveal="enter bottom move 150px over 1s after 0.3s" />
+							<img src="@whatWeDoImage3R.MediaUrl()" alt="Some image"  data-scroll-reveal="enter bottom move 150px over 1s after 0.5s" />
+						</div>
+					</div>
+			<div class="seven columns" data-scroll-reveal="enter right move 150px over 1s after 1.6s">
+						<div class="translate-left">
+							<div class="description-title-text left">
+								<p>@data.Value("whatWeDoCategory") <span>@data.Value("whatWeDoTitle")</span></p>
+							</div>
+							<div class="des-programs-author left">
+								<h6>@data.Value("whatWeDoDesc")</h6>
+								<p>author: <span>@data.Value("whatWeDoAuther")</span></p>
+								<a class="expander tipped" href="#" data-title="ajax expander" data-tipper-options='{"direction":"top","follow":"true"}'><div class="link">discover</div></a>
+							</div>
+						</div>	
+					</div>
+
+        }
+        else 
+        
+        {
+         var whatWeDoImage1L = data.Value<MediaWithCrops>("whatWeDoImage1");
+         var whatWeDoImage2L = data.Value<MediaWithCrops>("whatWeDoImage2");
+         var whatWeDoImage3L = data.Value<MediaWithCrops>("whatWeDoImage3");
+
+         
+				<div class="clear"></div>
+	            <div class="five columns float-right">
+						<div class="work-wrap">
+							<img src="@whatWeDoImage1L.MediaUrl()" alt="Some image"  data-scroll-reveal="enter bottom move 150px over 1s after 0.1s" />
+							<img src="@whatWeDoImage2L.MediaUrl()" alt="Some image"  data-scroll-reveal="enter bottom move 150px over 1s after 0.3s" />
+							<img src="@whatWeDoImage3L.MediaUrl()" alt="Some image"  data-scroll-reveal="enter bottom move 150px over 1s after 0.5s" />
+						</div>
+					</div>
+				<div class="seven columns float-right" data-scroll-reveal="enter left move 150px over 1s after 1.6s">
+						<div class="translate-right">
+							<div class="description-title-text right">
+								<p>@data.Value("whatWeDoCategory") <span>@data.Value("whatWeDoTitle")</span></p>
+							</div>
+							<div class="des-programs-author right">
+								<h6>@data.Value("whatWeDoDesc")</h6>
+								<p>author: <span>@data.Value("whatWeDoAuther")</span></p>
+								<a class="expander tipped" href="#" data-title="ajax expander" data-tipper-options='{"direction":"top","follow":"true"}'><div class="link">discover</div></a>
+							</div>
+						</div>
+					</div>
+
+
+        }
+                }
+
+
+		}
+			
+					
+				
+			
+			
+					

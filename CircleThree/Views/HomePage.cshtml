@@ -1,6 +1,8 @@
 ﻿@using Umbraco.Cms.Web.Common.PublishedModels;
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.HomePage>
 @using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+ @using Umbraco.Cms.Core.Models
+
 @{
 	Layout = "MasterTemplate.cshtml";
 }
@@ -9,54 +11,29 @@
 <!-- Primary Page Layout
 ================================================== -->
 
-<div class="section full-height" id="home">
-	<div class="home-carousel-wrap">
-		<div id="sync1" class="owl-carousel">
-			<div class="item background-home-image-1">
-				<div class="home-mask"></div>
-				<div class="home-text">
-					<div class="container fade-elements">
-						<div class="twelve columns">  @*  kjk *@
-							<h1>We build<br>great brands.</h1>
-						</div>
+		<div class="section full-height" id="home">
+			<div class="home-carousel-wrap">						
+
+				    @Html.GetBlockListHtml(Model, "homeSliders","HomeSlider")
+
+				    
+					
+					
+			
+					
+				<div id="sync2" class="owl-carousel fade-elements">
+					<div class="item">
 					</div>
-				</div>
-			</div>
-			<div class="item background-home-image-2">
-				<div class="home-mask"></div>
-				<div class="home-text">
-					<div class="container fade-elements">
-						<div class="twelve columns">
-							<h1>Focused<br>on strategy.</h1>
-						</div>
+					<div class="item">
 					</div>
-				</div>
-			</div>
-			<div class="item background-home-image-3">
-				<div class="home-mask"></div>
-				<div class="home-text">
-					<div class="container fade-elements">
-						<div class="twelve columns">
-							<h1>Specialized in<br>brand experience.</h1>
-						</div>
+					<div class="item">
 					</div>
-				</div>
+				</div>							
 			</div>
+			
+			<a href="#about" data-gal="m_PageScroll2id" data-ps2id-offset="78"><div class="link-down fade-elements"></div></a>
+			
 		</div>
-
-		<div id="sync2" class="owl-carousel fade-elements">
-			<div class="item">
-			</div>
-			<div class="item">
-			</div>
-			<div class="item">
-			</div>
-		</div>
-	</div>
-
-	<a href="#about" data-gal="m_PageScroll2id" data-ps2id-offset="78"><div class="link-down fade-elements"></div></a>
-
-</div>
 
 
 <div class="section back-white" id="about">
@@ -64,227 +41,37 @@
 		<div class="container">
 			<div class="twelve columns">
 				<div class="title-text left">
-					<p>a. <span>about us</span></p>
-					<h3>We help companies and startups from all over the world materialize their ideas into great projects.</h3>
+					<p><span>@Model.Value("aboutUsTitle")</span></p>
+					<h3>@Model.Value("aboutUsDescription")</h3>
 				</div>
 			</div>
-			<div class="six columns">
-				<div class="about-wrap">
-					<div class="about-icon">
-						<svg version="1.1" id="svg-icon-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-							 width="48px" height="48px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-						<g>
-						<rect x="1" y="16" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="52" height="40" />
-								</g>
-						<polyline fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="10,14 10,8 63,8 63,48 55,48 " />
-						<polyline fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="1,46 15,32 29,48 39,42 53,54 " />
-						<circle fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="40" cy="29" r="5" />
-								</svg>
-					</div>
-					<h5 data-scroll-reveal="enter bottom move 100px over 1s after 0.3s">branding.</h5>
-					<p data-scroll-reveal="enter bottom move 100px over 1s after 0.3s">Proin fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
-				</div>
-			</div>
-			<div class="six columns">
-				<div class="about-wrap">
-					<div class="about-icon">
-						<svg version="1.1" id="svg-icon-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-							 width="48px" height="48px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-						<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="16" y1="24" x2="38" y2="24" />
-						<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="16" y1="34" x2="38" y2="34" />
-						<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="16" y1="44" x2="38" y2="44" />
-						<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="16" y1="54" x2="38" y2="54" />
-						<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="12" y1="24" x2="8" y2="24" />
-						<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="12" y1="34" x2="8" y2="34" />
-						<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="12" y1="44" x2="8" y2="44" />
-						<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="12" y1="54" x2="8" y2="54" />
-						<polyline fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="14,8 1,8 1,63 45,63 45,8 32,8 " />
-						<polygon fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="27,5 27,1 19,1 19,5 15,5 13,13 33,13 31,5
-									" />
-						<polygon fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="55,1 55,54 59,62 63,54 63,1 " />
-						<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="55" y1="11" x2="63" y2="11" />
-								</svg>
-					</div>
-					<h5 data-scroll-reveal="enter bottom move 100px over 1s after 0.5s">development.</h5>
-					<p data-scroll-reveal="enter bottom move 100px over 1s after 0.5s">Proin fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
-				</div>
-			</div>
-			<div class="six columns">
-				<div class="about-wrap">
-					<div class="about-icon">
-						<svg version="1.1" id="svg-icon-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-							 width="48px" height="48px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-						<rect x="1" y="7" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="62" height="50" />
-						<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="1" y1="15" x2="63" y2="15" />
-						<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="10" y1="11" x2="6" y2="11" />
-						<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="18" y1="11" x2="14" y2="11" />
-						<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="26" y1="11" x2="22" y2="11" />
-						<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="6" y1="25" x2="33" y2="25" />
-						<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="6" y1="33" x2="33" y2="33" />
-						<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="6" y1="41" x2="33" y2="41" />
-						<rect x="38" y="25" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="19" height="16" />
-								</svg>
-					</div>
-					<h5 data-scroll-reveal="enter bottom move 100px over 1s after 0.3s">web design.</h5>
-					<p data-scroll-reveal="enter bottom move 100px over 1s after 0.3s">Proin fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
-				</div>
-			</div>
-			<div class="six columns">
-				<div class="about-wrap">
-					<div class="about-icon">
-						<svg version="1.1" id="svg-icon-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-							 width="48px" height="48px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-						<polygon fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="26,49.042 54.963,49.042 54.963,11.042
-									1,11.042 1,49.042 14,49.042 14,59.486 " />
-						<polyline fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="57,41.042 62.963,41.042 62.963,3.042
-									9,3.042 9,9 " />
-								</svg>
-					</div>
-					<h5 data-scroll-reveal="enter bottom move 100px over 1s after 0.5s">support.</h5>
-					<p data-scroll-reveal="enter bottom move 100px over 1s after 0.5s">Proin fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
-				</div>
-			</div>
+	
+						@Html.GetBlockListHtml(Model, "aboutUsNesteds","AboutNested")
+				
 		</div>
 	</div>
 	<div class="section padding-top-bottom back-dark">
-		<div id="owl-sep-1" class="owl-carousel owl-theme" data-scroll-reveal="enter left move 150px over 0.7s after 0.2s">
-			<div class="item">
-				<div class="container">
-					<div class="twelve columns">
-						<div class="quote">
-							<h4>"Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people."</h4>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<div class="container">
-					<div class="twelve columns">
-						<div class="quote">
-							<h4>"Design is a funny word. Some people think design means how it looks. But of course, if you dig deeper, it's really how it works."</h4>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<div class="container">
-					<div class="twelve columns">
-						<div class="quote">
-							<h4>"Space and light and order. Those are the things that men need just as much as they need bread or a place to sleep."</h4>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+
+			@Html.GetBlockListHtml(Model, "testimonialNesteds","TestimonialNested")
+
 	</div>
 	<div class="section padding-top-bottom back-white">
 		<div class="container">
 			<div class="twelve columns">
 				<div class="title-text left">
-					<p>b. <span>our team</span></p>
-					<h3>We're a close team of creatives, designers & developers who work together to create beautiful, engaging digital experiences.</h3>
+					<p><span>@Model.Value("ourTeamTitle")</span></p>
+					<h3>@Model.Value("ourTeamDesc")</h3>
 				</div>
 			</div>
-			<div class="four columns" data-scroll-reveal="enter bottom move 100px over 1s after 0.3s">
-				<div class="team-wrap fst">
-					<h6>Alex Andrews</h6>
-					<p>Vivamus dapibus rutrum mi ut aliquam. In hac habitasse platea dictumst. Integer sagittis neque a tortor tempor in.</p>
-					<div class="social-team">
-						<ul class="list-social-team">
-							<li class="icon-team tipped" data-title="twitter" data-tipper-options='{"direction":"top","follow":"true"}'>
-								<a href="#">&#xf099;</a>
-							</li>
-							<li class="icon-team tipped" data-title="github" data-tipper-options='{"direction":"top","follow":"true"}'>
-								<a href="#">&#xf09b;</a>
-							</li>
-							<li class="icon-team tipped" data-title="pinterest" data-tipper-options='{"direction":"top","follow":"true"}'>
-								<a href="#">&#xf231;</a>
-							</li>
-							<li class="icon-team tipped" data-title="facebook" data-tipper-options='{"direction":"top","follow":"true"}'>
-								<a href="#">&#xf09a;</a>
-							</li>
-						</ul>
-					</div>
-					<img src="images/team1.png" alt="Some image" />
-				</div>
-			</div>
-			<div class="four columns" data-scroll-reveal="enter bottom move 100px over 1s after 0.5s">
-				<div class="team-wrap snd">
-					<h6>Marco Kulis</h6>
-					<p>Vivamus dapibus rutrum mi ut aliquam. In hac habitasse platea dictumst. Integer sagittis neque a tortor tempor in.</p>
-					<div class="social-team">
-						<ul class="list-social-team">
-							<li class="icon-team tipped" data-title="twitter" data-tipper-options='{"direction":"top","follow":"true"}'>
-								<a href="#">&#xf099;</a>
-							</li>
-							<li class="icon-team tipped" data-title="github" data-tipper-options='{"direction":"top","follow":"true"}'>
-								<a href="#">&#xf09b;</a>
-							</li>
-							<li class="icon-team tipped" data-title="pinterest" data-tipper-options='{"direction":"top","follow":"true"}'>
-								<a href="#">&#xf231;</a>
-							</li>
-							<li class="icon-team tipped" data-title="facebook" data-tipper-options='{"direction":"top","follow":"true"}'>
-								<a href="#">&#xf09a;</a>
-							</li>
-						</ul>
-					</div>
-					<img src="images/team2.png" alt="Some image" />
-				</div>
-			</div>
-			<div class="four columns" data-scroll-reveal="enter bottom move 100px over 1s after 0.7s">
-				<div class="team-wrap trd">
-					<h6>Frank Furius</h6>
-					<p>Vivamus dapibus rutrum mi ut aliquam. In hac habitasse platea dictumst. Integer sagittis neque a tortor tempor in.</p>
-					<div class="social-team">
-						<ul class="list-social-team">
-							<li class="icon-team tipped" data-title="twitter" data-tipper-options='{"direction":"top","follow":"true"}'>
-								<a href="#">&#xf099;</a>
-							</li>
-							<li class="icon-team tipped" data-title="github" data-tipper-options='{"direction":"top","follow":"true"}'>
-								<a href="#">&#xf09b;</a>
-							</li>
-							<li class="icon-team tipped" data-title="pinterest" data-tipper-options='{"direction":"top","follow":"true"}'>
-								<a href="#">&#xf231;</a>
-							</li>
-							<li class="icon-team tipped" data-title="facebook" data-tipper-options='{"direction":"top","follow":"true"}'>
-								<a href="#">&#xf09a;</a>
-							</li>
-						</ul>
-					</div>
-					<img src="images/team3.png" alt="Some image" />
-				</div>
-			</div>
+			
+						@Html.GetBlockListHtml(Model, "ourTeamLists","OurTeamList")
+
 		</div>
 	</div>
 	<div class="section padding-top-bottom">
-		<div class="parallax-1"></div>
-		<div class="dark-over-sep"></div>
-		<div class="container z-bigger">
-			<div class="three columns">
-				<div class="counter-wrap">
-					<p><span class="counter-numb">247</span></p>
-					<h6>clients</h6>
-				</div>
-			</div>
-			<div class="three columns">
-				<div class="counter-wrap">
-					<p><span class="counter-numb">319</span></p>
-					<h6>projects</h6>
-				</div>
-			</div>
-			<div class="three columns">
-				<div class="counter-wrap">
-					<p><span class="counter-numb">131</span></p>
-					<h6>brands</h6>
-				</div>
-			</div>
-			<div class="three columns">
-				<div class="counter-wrap">
-					<p><span class="counter-numb">151</span></p>
-					<h6>awards</h6>
-				</div>
-			</div>
-		</div>
+	
+								@Html.GetBlockListHtml(Model, "statisticsLists","StatisticsList")
+
 	</div>
 </div>
 
@@ -294,8 +81,8 @@
 		<div class="container">
 			<div class="twelve columns">
 				<div class="title-text left">
-					<p>c. <span>we do magic</span></p>
-					<h3>We take pride in delivering only the best. We're an agency born out of a passion to make great products.</h3>
+					<p><span>@Model.Value("whatWeDoTitle")</span></p>
+					<h3>@Model.Value("whatWeDoDesc")</h3>
 				</div>
 			</div>
 
@@ -310,95 +97,12 @@
 				</div>
 			</div>
 
-			<div class="clear"></div>
 
-			<div class="five columns">
-				<div class="work-wrap">
-					<img src="images/portfolio/1a.jpg" alt="Some image" data-scroll-reveal="enter bottom move 150px over 1s after 0.1s" />
-					<img src="images/portfolio/1b.jpg" alt="Some image" data-scroll-reveal="enter bottom move 150px over 1s after 0.3s" />
-					<img src="images/portfolio/1c.jpg" alt="Some image" data-scroll-reveal="enter bottom move 150px over 1s after 0.5s" />
-				</div>
-			</div>
-			<div class="seven columns" data-scroll-reveal="enter right move 150px over 1s after 1.6s">
-				<div class="translate-left">
-					<div class="description-title-text left">
-						<p>branding. <span>project title</span></p>
-					</div>
-					<div class="des-programs-author left">
-						<h6>art direction, branding graphic design, html, css</h6>
-						<p>author: <span>marco kulis</span></p>
-						<a class="expander tipped" href="project1.html" data-title="ajax expander" data-tipper-options='{"direction":"top","follow":"true"}'><div class="link">discover</div></a>
-					</div>
-				</div>
-			</div>
+								    @Html.GetBlockListHtml(Model, "whatWeDos","WhatWeDo")
 
-			<div class="clear"></div>
-
-			<div class="five columns float-right">
-				<div class="work-wrap">
-					<img src="images/portfolio/4a.jpg" alt="Some image" data-scroll-reveal="enter bottom move 150px over 1s after 0.1s" />
-					<img src="images/portfolio/4b.jpg" alt="Some image" data-scroll-reveal="enter bottom move 150px over 1s after 0.3s" />
-					<img src="images/portfolio/4c.jpg" alt="Some image" data-scroll-reveal="enter bottom move 150px over 1s after 0.5s" />
-				</div>
-			</div>
-			<div class="seven columns float-right" data-scroll-reveal="enter left move 150px over 1s after 1.6s">
-				<div class="translate-right">
-					<div class="description-title-text right">
-						<p>design. <span>project title</span></p>
-					</div>
-					<div class="des-programs-author right">
-						<h6>art direction, branding graphic design, html, css</h6>
-						<p>author: <span>marco kulis</span></p>
-						<a class="expander tipped" href="project2.html" data-title="ajax expander" data-tipper-options='{"direction":"top","follow":"true"}'><div class="link">discover</div></a>
-					</div>
-				</div>
-			</div>
-
-			<div class="clear"></div>
-
-			<div class="five columns">
-				<div class="work-wrap">
-					<img src="images/portfolio/3a.jpg" alt="Some image" data-scroll-reveal="enter bottom move 150px over 1s after 0.1s" />
-					<img src="images/portfolio/3b.jpg" alt="Some image" data-scroll-reveal="enter bottom move 150px over 1s after 0.3s" />
-					<img src="images/portfolio/3c.jpg" alt="Some image" data-scroll-reveal="enter bottom move 150px over 1s after 0.5s" />
-				</div>
-			</div>
-			<div class="seven columns" data-scroll-reveal="enter right move 150px over 1s after 1.6s">
-				<div class="translate-left">
-					<div class="description-title-text left">
-						<p>art direction. <span>project title</span></p>
-					</div>
-					<div class="des-programs-author left">
-						<h6>art direction, branding graphic design, html, css</h6>
-						<p>author: <span>marco kulis</span></p>
-						<a class="expander tipped" href="project3.html" data-title="ajax expander" data-tipper-options='{"direction":"top","follow":"true"}'><div class="link">discover</div></a>
-					</div>
-				</div>
-			</div>
-
-			<div class="clear"></div>
-
-			<div class="five columns float-right">
-				<div class="work-wrap">
-					<img src="images/portfolio/2a.jpg" alt="Some image" data-scroll-reveal="enter bottom move 150px over 1s after 0.1s" />
-					<img src="images/portfolio/2b.jpg" alt="Some image" data-scroll-reveal="enter bottom move 150px over 1s after 0.3s" />
-					<img src="images/portfolio/2c.jpg" alt="Some image" data-scroll-reveal="enter bottom move 150px over 1s after 0.5s" />
-				</div>
-			</div>
-			<div class="seven columns float-right" data-scroll-reveal="enter left move 150px over 1s after 1.6s">
-				<div class="translate-right">
-					<div class="description-title-text right">
-						<p>branding. <span>project title</span></p>
-					</div>
-					<div class="des-programs-author right">
-						<h6>art direction, branding graphic design, html, css</h6>
-						<p>author: <span>marco kulis</span></p>
-						<a class="expander tipped" href="project4.html" data-title="ajax expander" data-tipper-options='{"direction":"top","follow":"true"}'><div class="link">discover</div></a>
-					</div>
-				</div>
-			</div>
-
-			<div class="clear"></div>
+			
+			
+			
 		</div>
 	</div>
 	<a href="#contact" data-gal="m_PageScroll2id" data-ps2id-offset="78">
@@ -412,42 +116,17 @@
 		<div class="container z-bigger">
 			<div class="twelve columns" data-scroll-reveal="enter bottom move 150px over 0.7s after 0.2s">
 				<div id="owl-logos" class="owl-carousel owl-theme">
-					<div class="item">
-						<img src="images/logos/white1.png" alt="" />
-					</div>
-					<div class="item">
-						<img src="images/logos/white2.png" alt="" />
-					</div>
-					<div class="item">
-						<img src="images/logos/white3.png" alt="" />
-					</div>
-					<div class="item">
-						<img src="images/logos/white4.png" alt="" />
-					</div>
-					<div class="item">
-						<img src="images/logos/white5.png" alt="" />
-					</div>
-					<div class="item">
-						<img src="images/logos/white6.png" alt="" />
-					</div>
-					<div class="item">
-						<img src="images/logos/white1.png" alt="" />
-					</div>
-					<div class="item">
-						<img src="images/logos/white2.png" alt="" />
-					</div>
-					<div class="item">
-						<img src="images/logos/white3.png" alt="" />
-					</div>
-					<div class="item">
-						<img src="images/logos/white4.png" alt="" />
-					</div>
-					<div class="item">
-						<img src="images/logos/white5.png" alt="" />
-					</div>
-					<div class="item">
-						<img src="images/logos/white6.png" alt="" />
-					</div>
+									
+                            @{
+                                var typedMultiMediaPicker = Model.Value<IEnumerable<MediaWithCrops>>("workWithUsLogos");
+                                foreach (var entry in typedMultiMediaPicker)
+                                {
+                                   @* <img src="@entry.MediaUrl()" style="width:200px" />*@
+                                    <div class="item">
+        								<img style="width:120px" src="@entry.MediaUrl()" alt="" />
+        							</div>	
+                                }
+                            }
 				</div>
 			</div>
 		</div>
@@ -460,49 +139,14 @@
 		<div class="container">
 			<div class="twelve columns">
 				<div class="title-text left">
-					<p>d. <span>engaging digital</span></p>
-					<h3>We create successful, innovative digital products from the initial concept through full product launch.</h3>
+					<p><span>@Model.Value("featureTitle")</span></p>
+				<h3>@Model.Value("featureDesc")</h3>
 				</div>
 			</div>
-			<div class="four columns" data-scroll-reveal="enter bottom move 100px over 1s after 0.3s">
-				<div class="services-wrap back-gray">
-					<h5><span>&#xe001;</span> perfect design.</h5>
-					<p>Proin fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
-				</div>
-			</div>
-			<div class="four columns" data-scroll-reveal="enter bottom move 100px over 1s after 0.5s">
-				<div class="services-wrap back-gray">
-					<h5><span>&#xe02b;</span> web development.</h5>
-					<p>Proin fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
-				</div>
-			</div>
-			<div class="four columns" data-scroll-reveal="enter bottom move 100px over 1s after 0.7s">
-				<div class="services-wrap back-gray">
-					<h5><span>&#xe040;</span> social media.</h5>
-					<p>Proin fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
-				</div>
-			</div>
+						    @Html.GetBlockListHtml(Model, "featureNesteds","FeatureNested")
+
 
 			<div class="clear"></div>
-
-			<div class="four columns" data-scroll-reveal="enter bottom move 100px over 1s after 0.3s">
-				<div class="services-wrap back-gray">
-					<h5><span>&#xe033;</span> graphic design.</h5>
-					<p>Proin fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
-				</div>
-			</div>
-			<div class="four columns" data-scroll-reveal="enter bottom move 100px over 1s after 0.5s">
-				<div class="services-wrap back-gray">
-					<h5><span>&#xe050;</span> reliable results.</h5>
-					<p>Proin fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
-				</div>
-			</div>
-			<div class="four columns" data-scroll-reveal="enter bottom move 100px over 1s after 0.7s">
-				<div class="services-wrap back-gray">
-					<h5><span>&#xe032;</span> copy writing.</h5>
-					<p>Proin fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
-				</div>
-			</div>
 		</div>
 	</div>
 	<div class="section padding-bottom">
@@ -514,35 +158,8 @@
 				</div>
 			</div>
 			<div class="twelve columns">
-				<div class="pricing-wrap">
-					<div class="pricing-plan back-dark3" data-scroll-reveal="enter bottom move 100px over 1s after 0.3s">
-						<div class="top">1. <span>basic</span></div>
-						<div class="price"><span class="small">$</span>0<span class="small-super">99</span> <span class="small-text">per month</span></div>
-						<div class="offers">5 projects</div>
-						<div class="offers">5 gb storage</div>
-						<div class="offers">unlimited users</div>
-						<div class="offers">10 gb bandwith</div>
-						<div class="button">get it</div>
-					</div>
-					<div class="pricing-plan back-dark2" data-scroll-reveal="enter bottom move 100px over 1s after 0.5s">
-						<div class="top">2. <span>premium</span></div>
-						<div class="price"><span class="small">$</span>19<span class="small-super">99</span> <span class="small-text">per month</span></div>
-						<div class="offers">15 projects</div>
-						<div class="offers">15 gb storage</div>
-						<div class="offers">unlimited users</div>
-						<div class="offers">20 gb bandwith</div>
-						<div class="button">get it</div>
-					</div>
-					<div class="pricing-plan back-dark1" data-scroll-reveal="enter bottom move 100px over 1s after 0.7s">
-						<div class="top">3. <span>platinum</span></div>
-						<div class="price"><span class="small">$</span>39<span class="small-super">99</span> <span class="small-text">per month</span></div>
-						<div class="offers">50 projects</div>
-						<div class="offers">50 gb storage</div>
-						<div class="offers">unlimited users</div>
-						<div class="offers">100 gb bandwith</div>
-						<div class="button">get it</div>
-					</div>
-				</div>
+									    @Html.GetBlockListHtml(Model, "priceCards","PriceCard")
+
 			</div>
 		</div>
 	</div>

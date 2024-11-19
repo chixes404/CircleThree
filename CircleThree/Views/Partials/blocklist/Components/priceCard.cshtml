@@ -1,0 +1,20 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockListItem>;
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@using Umbraco.Cms.Core.Models
+
+@{
+          var content = (ContentModels.PriceCard)Model.Content;
+	      var timeCounter = content.Value("priceCardCounter");
+      
+}
+
+
+			<div class="pricing-plan back-dark3" data-scroll-reveal="enter bottom move 100px over 1s after @(timeCounter + "s")">
+						<div class="top"> <span>@content.Value("priceCardTitle")</span></div>
+		   <div class="price"><span class="small">$</span>@content.Value("price") <span class="small-text">per month</span></div>
+						<div class="offers">5 projects</div>
+						<div class="offers">5 gb storage</div>
+						<div class="offers">unlimited users</div>
+						<div class="offers">10 gb bandwith</div>
+						<div class="button">get it</div>
+					</div>
