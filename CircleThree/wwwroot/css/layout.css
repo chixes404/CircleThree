@@ -2193,7 +2193,7 @@ figure.vimeo a img, figure.youtube a img {
 	background-repeat: no-repeat;
 	background-size: 32px 64px;
 	opacity:.7;
-	background-image: url("../images/cd-icon-controller.svg");
+	background-image: url("../images/cd-icon-conroller.svg");
 	z-index:3;
     -webkit-transition: all 300ms linear;
     -moz-transition: all 300ms linear;
